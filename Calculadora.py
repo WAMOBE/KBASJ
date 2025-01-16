@@ -1,3 +1,4 @@
+# calculadora 
 class Calculadora:
     def sumar(self, a, b):
         return a + b
@@ -24,13 +25,12 @@ def test_restar():
  assert calc.restar(10, 5) == 5
 def test_multiplicar():
  calc = Calculadora()
- assert calc.multiplicar(9, 4) == 36
+ assert calc.multiplicar(3, 4) == 12
 def test_dividir():
  calc = Calculadora()
- assert calc.dividir(8, 2) == 4 
+ assert calc.dividir(10, 2) == 5
  with pytest.raises(ValueError):
     calc.dividir(10, 0)
 
 
-    
 
